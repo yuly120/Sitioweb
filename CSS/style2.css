@@ -1,0 +1,96 @@
+/* Estilo para el fondo general de la página */
+body {
+    background-color: #fce4ec; /* Fondo rosado claro */
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Estilo para la calculadora */
+.calculadora {
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco con un toque sutil */
+    padding: 20px;
+    width: 320px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Estilo para la pantalla de la calculadora */
+#pantalla {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #f8bbd0; /* Fondo rosado pastel */
+    color: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para los botones */
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+/* Estilo base para los botones */
+button {
+    background: linear-gradient(135deg, #f8bbd0, #f48fb1); /* Degradado rosa pastel */
+    color: #fff;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Estilos para los botones de operadores */
+button.operador {
+    background: linear-gradient(135deg, #f06292, #ec407a); /* Degradado rosa fuerte */
+}
+
+button.igual {
+    background: linear-gradient(135deg, #ba68c8, #ab47bc); /* Degradado morado claro */
+}
+
+button.limpiar {
+    background: linear-gradient(135deg, #ff80ab, #ff4081); /* Degradado rosa fuerte */
+}
+
+/* Estilo para el botón deshabilitado (si es necesario) */
+button:disabled {
+    background: #ddd;
+    cursor: not-allowed;
+}
+
+/* Estilo para el resultado */
+.resultado-box {
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Texto del resultado */
+#resultado {
+    font-size: 20px;
+    font-weight: bold;
+}
